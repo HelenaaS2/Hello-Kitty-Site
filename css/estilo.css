@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(255, 189, 194)
+    background-image: url(https://i.pinimg.com/originals/08/5f/03/085f036aa0707d484ad1c2e2eb7bdb8f.gif);
+    background-color: rgb(255, 223, 228);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
@@ -14,7 +17,7 @@ body{
     font-family: "Playwrite HU", cursive;
 }
 html{
-    font-size: 62.5%;
+    font-size: 70%;
     scroll-padding-top: 80px;
 }
 body{
@@ -59,7 +62,7 @@ nav a.active{
     border-bottom: 3px solid rgb(233, 50, 65);
 }
 section{
-    min-height: 80vh;
+    min-height: 110vh;
     padding: 2rem 6.5% 6rem;
 }
 .home{
@@ -95,7 +98,8 @@ span{
     width: 45vh;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-left: -6rem
+    margin-left: -6rem;
+    margin-top: -30rem;
 }
 .home-img img:hover{
     transform: scale(1.1);
@@ -105,7 +109,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 4rem;
-    height: 4rem;
+    height: 7rem;
     background-color: transparent;
     font-size: 2rem;
     border: 0.2rem solid rgb rgb(221, 10, 126);
@@ -181,68 +185,73 @@ span{
         content: 'apaixonada em Beatles'
 }
 }
-@media(max-width:995px){
+@media(max-width: 995px){
     nav{
         position: absolute;
         display: none;
-        top:0;
-        right:0;
-        width: 40%;
-        border-left: 3px solid pink;
-        border-bottom: 3px solid palevioletred;
-        padding: 1rem;
-        background-color: plum;
-        border-top: 0.1rem solid palevioletred;
-        }
-}
-
-nav.active{
+        top: 0;
+        right: 0;
+        width: 28%;
+        border-left: 3px solid rgb(255, 69, 131);
+        border-right: 3px solid rgb(255, 69, 131);
+        border-bottom: 3px solid rgb(255, 69, 131);
+        padding: 3rem;
+        background-color: rgba(255, 187, 210, 0.76);
+        border-top: 3px solid rgb(255, 69, 131);
+    }
+    nav.active{
     display :block;
-}
-nav a:hover,
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    nav a:hover,
     nav.active{
         padding: 1rem;
         border-radius: 5rem;
         border-bottom: 0.1rem solid salmon;
     }
-  .menu-icon{
-         font-size: 3rem;
+}
+.menu-icon{
+         font-size: 5rem;
          color: aliceblue;
          cursor: pointer;
          display: none;
     }
-    @media (max-width:1000px){
+@media (max-width:1000px){
         .home{
             gap: 4rem;
         }
+}
+@media(max-width: 995px){
+    .home{
+    flex-direction: column;
+    margin: 5rem 4rem;
     }
-    @media(max-width: 995px){
-        .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-      .home .home-content h3{
-        font-size: 2.5rem;
+    .home .home-content h3{
+    font-size: 2.5rem;
     }
     .home .home-content h1{
-        font-size: 4rem;
+    font-size: 4rem;
     }
 }
-    .menu-toggle{
-        display: none;
+.menu-toggle{
+    display: none;
     }
-    .menu-icon{
+.menu-icon{
         display: none;
         flex-direction: column;
         justify-content: space-between;
         width: 30px;
-        height: 22px;
+        height: 23px;
         cursor: pointer;
         z-index: 101 ;
     }
 .menu-icon span{
     display: block;
-    height: 4px;
+    height:  1px;
     background-color: rgb(247, 247, 250) ;
     border-radius: 2px;
 }
@@ -261,4 +270,7 @@ nav a:hover,
     font-size: 1rem;
     margin-bottom: 1rem;
     border-left: 3px solid;
+}
+.sobre-mim, .profissao{
+    margin-top: 10;
 }
