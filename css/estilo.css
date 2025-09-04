@@ -1,0 +1,264 @@
+body{
+    background-color: rgb(255, 189, 194)
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: x-large;
+    font-family: "Playwrite HU", cursive;
+}
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 80px;
+}
+body{
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+color:rgb(173, 8, 99);
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 0.2rem 12%;
+    background-color: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color:rgb(221, 10, 126);
+    font-weight: 1000;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(2);
+}
+nav a{
+    font-size: 2rem;
+    color: rgb(221, 10, 126);
+    margin-left: 5rem;
+    font-weight: 100;
+    transition: 0.15s ease;
+}
+nav a:hover,
+nav a.active{
+    color:rgb(233, 50, 65);
+    border-bottom: 3px solid rgb(233, 50, 65);
+}
+section{
+    min-height: 80vh;
+    padding: 2rem 6.5% 6rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.home .home-content h1{
+    font-size: 4rem;
+    font-weight: 10;
+    line-height: 2;
+}
+span{
+    color: rgb(221, 10, 126);
+    font-size: 3rem;
+}
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 90;
+    margin-bottom: 1rem;
+}
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 90;
+    margin-bottom: 1rem;
+}
+.home-content p{
+    font-size: 2.3rem;
+}
+.home-img img{
+    position: relative;
+    width: 45vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: -6rem
+}
+.home-img img:hover{
+    transform: scale(1.1);
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 2rem;
+    border: 0.2rem solid rgb rgb(221, 10, 126);
+    border-radius: 50%;
+    color: rgb(221, 10, 126);
+    margin: 0.1rem;
+    transform: 0.3s ease;
+}
+.social-icons a:hover{
+    background-color: rgb(255, 0, 128);
+    color: white;
+    box-shadow: 0 0 15px rgb(255, 0, 128);
+}
+.btn{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(221, 10, 126);
+    border-radius: 2.5rem;
+    transition: 0.3s ease;
+    margin-top: 0.75rem;
+}
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: rgb(255, 0, 106);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 25px rgb(255, 0, 43);
+}
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: "";
+    color:rgb(221, 10, 126);
+    animation: words 13s infinite;
+}
+.typing-text span::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(235, 80, 145);
+    animation: cursor 0.7s infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 3px solid pink
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: 'apaixonada em Canto'
+    }
+    21%, 40%{
+        content: 'apaixonada em Musculação e Nutrição'
+    }
+    41%, 60%{
+        content: 'apaixonada em Gatos'
+    }
+    61%, 80%{
+        content: 'apaixonada em Hello Kitty'
+    }
+     81%, 100%{
+        content: 'apaixonada em Beatles'
+}
+}
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top:0;
+        right:0;
+        width: 40%;
+        border-left: 3px solid pink;
+        border-bottom: 3px solid palevioletred;
+        padding: 1rem;
+        background-color: plum;
+        border-top: 0.1rem solid palevioletred;
+        }
+}
+
+nav.active{
+    display :block;
+}
+nav a:hover,
+    nav.active{
+        padding: 1rem;
+        border-radius: 5rem;
+        border-bottom: 0.1rem solid salmon;
+    }
+  .menu-icon{
+         font-size: 3rem;
+         color: aliceblue;
+         cursor: pointer;
+         display: none;
+    }
+    @media (max-width:1000px){
+        .home{
+            gap: 4rem;
+        }
+    }
+    @media(max-width: 995px){
+        .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+      .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home .home-content h1{
+        font-size: 4rem;
+    }
+}
+    .menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 101 ;
+    }
+.menu-icon span{
+    display: block;
+    height: 4px;
+    background-color: rgb(247, 247, 250) ;
+    border-radius: 2px;
+}
+ 
+/*exibe o menu em telas menores*/
+@media (max-width:995px) {
+        .menu-icon {
+            display: flex;
+        }
+}
+
+#menu-toggle:checked ~ nav{
+    display: block;
+}
+.blocos h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid;
+}
