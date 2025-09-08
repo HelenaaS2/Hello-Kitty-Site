@@ -98,8 +98,8 @@ span{
     width: 45vh;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-left: -6rem;
-    margin-top: -30rem;
+    margin-left: -5rem;
+    margin-top: -27rem;
 }
 .home-img img:hover{
     transform: scale(1.1);
@@ -169,21 +169,36 @@ span{
 }
 
 @keyframes words{
-    0%, 20%{
+    0%, 10%{
         content: 'apaixonada em Canto'
     }
-    21%, 40%{
+    11%, 20%{
         content: 'apaixonada em Musculação e Nutrição'
     }
-    41%, 60%{
+    21%, 30%{
         content: 'apaixonada em Gatos'
     }
-    61%, 80%{
+    31%, 40%{
         content: 'apaixonada em Hello Kitty'
     }
-     81%, 100%{
+    41%, 50%{
         content: 'apaixonada em Beatles'
-}
+    }
+    51%, 60%{
+        content: 'apaixonada em 3Quency'
+    }
+    61%, 70%{
+        content: 'apaixonada em Midnight Til Morning'
+    }
+    71%, 80%{
+        content: 'apaixonada em Michael Jackson'
+    }
+    81%, 90%{
+        content: 'apaixonada em System of a Down'
+    }
+    91%, 100%{
+        content: 'apaixonada pelo Reality Show: Montando a Banda'
+    }
 }
 @media(max-width: 995px){
     nav{
